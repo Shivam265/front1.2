@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse - Events</title>
+    <style>
+        #box{
+            background-color: aqua;
+            padding:20px;
+            border:2px solid red;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div id="box" class="test">
+        <h2>Test box</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti temporibus quaerat suscipit nihil.</p>
+    </div>
+
+
+
+    <script src="//code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        /*(document).ready(function(){
+            $("#box").click(function(){
+                $("#box").css("background-color","green");// css color change
+            //let a = $("#box").html();//html access in html() method
+                //console.log(a)
+
+            });
+
+            // mouse event click//
+
+            $("#box").click(function(){
+                $("#box").css("background-color","green");// click in mouse  color change
+            });
+
+            $("#box").dblclick(function(){
+                $("#box").css("background-color","pink");//mouse dblclick in css color color
+                
+
+            });
+
+    
+            $("#box").contextmenu(function(){//right click mouse in clor change
+                $("#box").css("background-color","blue");// css color color
+
+            });
+
+            $("#box").mouseenter(function(){// mouseenter im   box in clor change
+                $("#box").css("background-color","orange");// css color color
+
+            });
+
+            $("#box").mouseleave(function(){//mouseleave in mouse move in clor change
+                $("#box").css("background-color","white");// css color color
+
+            });
+
+
+        });
+    });*/
+
+    $("div").on({//on() method used in one to more  multiple event hander//
+        mouseenter:function(){
+            $(this).css("background-color","red")
+        },
+        mouseleave:function(){
+            $(this).css("background-color","yellow")
+        },
+
+        dblclick:function(){
+            $(this).css("background-color","blue")
+        },
+        click:function(){
+            $(this).css("background-color","pink")
+        }
+
+       
+    })
+
+    </script>
+    
+</body>
+</html>

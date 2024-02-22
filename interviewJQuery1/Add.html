@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add method</title>
+    <style>
+        #box{
+            background-color: pink;
+            border: 2px solid black;
+            padding: 20px;
+            width:40%;
+            height:auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1> Jqeury Add method</h1>
+    <div id="box">
+        <h2>Text Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repellat?</p>
+    </div>
+    <br>
+    <!--append and prepend mwthod-->
+    <!--<button id="appendBtn">Append</button>
+    <button id="prependBtn">Prepend</button>-->
+
+    <!--after and before method-->
+    <button id="afterBtn">After</button>
+    <button id="beforeBtn">Before</button>
+
+    <script src="//code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            // append method used in after append  in html tag and box inside 
+           /* $("#appendBtn").click(function(){
+                $("#box").append("<h3>Goood morning</h3>");
+
+            })
+            // prepend method used in before append in html tag 
+            $("#prependBtn").click(function(){
+                $("#box").prepend("<h4>Goood evening</h4>");
+
+            })*/
+
+
+            // after and before method//
+            //after and  before mathod used in box outside html tag add and multilple tag add-->
+
+             $("#afterBtn").click(function(){
+                $("#box").after("<h3>Goood morning</h3>");
+
+            })
+            
+            $("#beforeBtn").click(function(){
+                $("#box").before("<h4>Goood evening</h4>");
+
+            })
+
+        })
+        </script>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opacity</title>
+    <style>
+        .img {
+            opacity: 0.5;
+            /*The opacity property can take a value from 0.0 - 1.0. The lower the value, the more transparent:Forest
+             opacity 0.2*/
+
+
+        }
+
+        .img:hover {
+            /*The opacity property is often used together with the :hover selector to change the opacity on mouse-over:*/
+            opacity: 1.0;
+
+        }
+
+        div.background {
+            background: url(nature.jpeg) repeat;
+            border: 2px solid black;
+        }
+
+        div.transbox {
+            margin: 30px;
+            background-color: #ffffff;
+            border: 1px solid black;
+            opacity: 0.6;
+        }
+
+        div.transbox p {
+            margin: 5%;
+            font-weight: bold;
+            color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <div class="transbox">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, eaque.</p>
+
+        </div>
+    </div>
+    <!--<div class="img">
+        <img src="nature.jpeg">   
+
+    </div>-->
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery keyboard - Events</title>
+    <style>
+        #box{
+            background-color: aqua;
+            padding:20px;
+            border:2px solid red;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <h1>keyboard events in jQuery</h1>
+    <div id="box" class="test">
+        <h2>test box</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti temporibus quaerat suscipit nihil.</p>
+    </div>
+    <script src="//code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('body').keypress(function(){//keypress function used in  button any keyboard key press and color change
+                $(this).css("background-color","red");
+            })
+
+            $('body').keyup(function(){//keyup function used in  button any keyboard key press and color change
+                $(this).css("background-color","blue");
+            })
+
+            $('body').keydown(function(){//keypress and keydown in same work 
+                $(this).css("background-color","pink");
+            })
+
+            $("p").hide();// hide in p element
+            $("p").show();
+
+        })
+    </script>
+    </body>
+    </html>

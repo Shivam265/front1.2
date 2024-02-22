@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sibling method</title>
+    <style>
+        #main-outer{
+            background-color: purple;
+            height:100px;
+            width:50%;
+        }
+
+        #outer{
+            background-color: khaki;
+        }
+
+        #inner{
+            background-color: palevioletred;
+        } 
+        #child-head{
+            display: flex;
+            width: 30px;
+            height: 30px;
+        }      
+    </style>
+</head>
+<body>
+    <h1> Jqeury Sibling method</h1>
+    <div id="main-outer">
+        <h2>Main Outer</h2>
+        <div id="outer">
+            <h2>outer</h2>
+            <div id="inner">
+                <h2 id="child-head">Inner</h2>
+                <div class="text">A</div>
+                <div id="child-C">B</div>
+                <div>C</div>
+
+                <div class="text">D</div>
+                <div>E</div>
+                <div>F</div>
+            </div>
+        </div>
+    </div>
+        
+
+    <script src="//code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //Sibling method used in only sibling and not child,parent
+            //$('#child-C').siblings('.text').css("background","red")
+            
+            //next method used in next element in target value
+            //$('#child-C').next('A').css("background","red")
+
+           // next method used in next all element in target value
+           // $('#child-C').nextAll().css("background","red")
+
+           
+
+            // prevoius method used in back element
+            //$('#child-C').prev().css("background","red")
+
+            //prevoius method used in back all element target
+            //$('#child-C').prevAll().css("background","red")
+
+            // nestUntil() method used in (#child-C) and (.text) b/w in target value
+            //$('#child-C').nextUntil('.text').css("background","red")
+
+            // prevUntil() method used in (#child-C) and (.text) b/w in target value
+            $('#child-C').prevUntil('.text').css("background","red")
+
+
+        })
+
+  </script>
+
+   </body>
+   </html>

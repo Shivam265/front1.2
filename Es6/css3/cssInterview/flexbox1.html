@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox-1 css</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            display: flex;
+            height: 80vh;
+            /* harizontally center item*/
+            justify-content: center;
+            /*{space-around} used in start and end equal space or 
+            {space-between} start,end not space but equal space*/
+            /*justify-content: space-around;*/
+            /* harizontally and vertically center  both one line item*/
+            align-items: center;
+            /* {flex-start} used in harizontl display and {flex-end} vertical display item*/
+            align-items: flex-start;
+            flex-direction: row;
+            /* {flex-wrap} used in bottom display item*/
+            /*flex-direction: wrap;*/
+            /*{align-content:center} one to more line center in wrap item */
+            align-content: center;
+            /* {column-gap} used in item b/w gap and {row-gap} two row gap b/w display*/
+            /*column-gap: 5px;*/
+            /* {gap} shorthand property row 3px before and column 5px after display item*/
+            gap: 3px 5px;
+          
+        }
+
+        .item{
+            /*flex-grow: 1;*/
+            height: 32px;
+            width:32px;
+            background-color: blueviolet;
+            border: 2px solid black; 
+             
+        }
+
+        /* order property used in order minimum value in after display item*/
+
+        .order-1{
+            order:1;
+        }
+
+        .order-2{
+            order:2;
+        }
+
+        .order-3{
+            order:3;
+        }
+
+        .item1{
+            /* {flex grow} property used in 1 to 3 item space increase*/
+            /*flex-grow: 3;*/
+            /* {flex-shrink} used in 1 to 3 space item decrease*/ 
+            flex-shrink: 3;
+            /*{align-self} used in one perticular item position change*/
+            align-self: flex-start;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item item1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            
+        </div>
+    </main>
+    
+</body>
+</html>

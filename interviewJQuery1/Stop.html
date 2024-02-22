@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop</title>
+    <style>
+        #box{
+            border: 2px solid red;
+            background-color: aqua;
+            width:50px;
+            height:50px;
+            padding:20px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jquery Stop method</h1>
+    <div id="box">Rohit kumzr</div>
+    <br>
+    <button id="animateBtn">Animate</button>
+    <button id="stopBtn">Stop</button>
+    <script src="//code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //animate property used in ({params}) css  Camel Case {borderWidth:"20px"} property in  value 
+            $("#animateBtn").click(function(){
+                $("#box").animate({left:'200px'},3000)
+                $("#box").animate({fontSize:'20px'},1000)
+
+            })
+
+            $("#stopBtn").click(function(){
+                /*stop method  stop button click user in execute value stop
+                 and then second animation in show in stop(true) in all value stop*/
+                $("#box").stop()//one animate value stop default value (false)
+                $("#box").stop(true) //all animate value stop
+                $("#box").stop(true,true) // animation finish time 
+            })
+    
+
+        })
+    </script>
+</body>
+</html>

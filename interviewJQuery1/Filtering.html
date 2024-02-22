@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filtring Method</title>
+    <style>
+        #first{
+            background-color: khaki;
+            width:50%;
+            height:150px;
+        }
+
+        #second{
+            background-color: orchid;
+            width:50%;
+            height:150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jwuery in filtring method</h1>
+    <div id="first">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium dolor nesciunt neque nostrum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, provident!</p>
+
+    </div>
+
+    <ul>
+        <li>orange</li>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Graphes</li>
+
+    </ul>
+
+    <div id="second">
+        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi culpa minima ipsa commodi.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, autem.</p>
+
+    </div>
+
+    <script src="//code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // first method used in first element in target(id,class,selecter) 
+            //$('#second p').first().css('background','red');
+
+            // last method used in last element(id,class,selecter) in targer
+            //$('#second p').last().css('background','red');
+
+            // eq neumeric value(0,1) target element
+            //$('p').eq(1).css('background','red');
+            
+        
+            // filter method used in filter element class inside
+            //$('p').filter('.text').css('background','red');
+
+
+            // not  method used in not present(class,id,element) 
+            //$('p').not('.text').css('background','red');
+
+            $('ul li').slice(0,2).css('background','red');
+
+
+
+
+
+        })
+        </script>
+    
+</body>
+</html>

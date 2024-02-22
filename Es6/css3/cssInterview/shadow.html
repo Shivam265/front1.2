@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css - shadow</title>
+    <style>
+        .container{
+            display: flex;/* display:flex used in all card iline element*/
+        }
+
+        .card{
+            padding:23px 12px;
+            /*border:2px solid red;*/
+            margin:22px 12px;
+            background-color: burlywood;
+            /*box-shadow: 10px 12px  green; box-shadow: used in bottom,left in addition using;*/
+            /*box-shadow: -10px -12px  green; box-shadow: used in top,right in substuction using;*/
+            /*box-shadow: 7px 5px 10px green; box-shadow: used in bottom,left in addition using and 10px blur radius color ;*/
+            /*box-shadow: -7px -5px -10px green; box-shadow: used in bottom,left in addition using ;*/
+            /*box-shadow: 7px 5px 10px 20px green;  used in all top,right,bottom,left color blur and spread radius positive value increase the radius size and negative value radius size decrease   */
+             /*box-shadow: -7px 5px 10px 20px rgb(147, 212, 147,0.5); alpha color darkness increse*/
+             /*box-shadow:  box-shadow: inset 3px 5px green; inset used in box inside color using*/
+             /*box-shadow: inset 3px 5px green , 3px 5px red; box-shadow: inset in multiple shadow using one line*/
+        }
+        .card h2{
+            /*text-shadow: 1px 0px red;  text-shadow used in text color*/
+            /*text-shadow: 1px 0px 5px red;  text-shadow used 5px blur text*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="card" id="card-1">
+        <h2>Python course </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, voluptate fugiat a fugit cupiditate, omnis reiciendis unde, exercitationem optio voluptatibus voluptatum maxime! Beatae debitis impedit voluptatem soluta ea? Id illum quam at laborum architecto.</p>
+    </div>
+       <div class="card" id="card-2">
+        <h2>Frontend developer</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, ipsam alias, dolorum perferendis, vero ducimus et rerum enim excepturi incidunt ullam ea porro necessitatibus labore similique ipsum harum possimus culpa? Sit recusandae animi consequuntur.</p>
+    </div>
+       <div class="card" id="card-3">
+       <h2>Data Science</h2>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo nobis voluptatum optio, dolor cumque iure eum ducimus ratione iste, perferendis accusantium provident architecto a maxime facilis illo ipsum saepe totam unde omnis porro alias!</p>
+    </div>
+    </div>
+    
+</body>
+</html>

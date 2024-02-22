@@ -1,0 +1,41 @@
+.flex-container{
+    display: flex;/* inline element */
+    border: 2px solid green;
+    height:400px;
+    /*flex-direction: row;  display item used in harizontal display*/
+    /*flex-direction: column; display item used in vertical display*/
+    /*flex-direction: row-reverse;  display in item rigth to left display*/
+    /*flex-direction: column-reverse;  display in item bottom to top display*/
+    /*align-items: center; display in vertical center*/
+    align-items: baseline;
+    /*align-items: flex-start; display in top item */
+    /*align-items: flex-end; display: in bottom item*/;
+    /*justify-content: center; display in top center*/
+    /*justify-content: flex-end; display in right to left and item display 4,3,2,1 */
+    /*justify-content: flex-start; display in left to right and item display 1,2,3,4 */
+    /*flex-wrap: wrap; display wrap user in item display row by row display*/
+    /*flex-flow: column wrap; column wrap used in column by display*/
+
+
+}
+
+.fitem{
+
+    background-color: red;
+    border: 2px  solid black;
+    margin:15px;
+    width:130px;
+    height:130px;
+
+}
+.item1{
+    /*order: 3; order used in item larse number in last display*/
+    /*flex-grow: 3; flex grow used in item1 larse display*/
+    /*flex-shrink: 2; flex shrink in reponsive used in small display*/
+    /*align-self: center; align-self:center only item one center*/
+
+}
+.item4{
+    /*order:3;
+    flex-grow: 3;*/
+}

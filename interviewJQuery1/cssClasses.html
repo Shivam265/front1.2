@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes method</title>
+    <style>
+        #box{
+           
+            border: 2px solid black;
+            padding: 20px;
+            width:40%;
+            height:auto;
+        }
+
+        .first{
+            background-color: red;
+        }
+        .second{
+            background-color: green;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1> Jqeury classes method</h1>
+    <div id="box">
+        <h2>Text Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repellat?</p>
+    </div>
+    <br>
+    <button id="addbutton">Add Class</button>
+    <button id="removebutton">Remove Class</button>
+    <button id="togglebutton">Toggle Class</button>
+
+    <script src="//code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //add class used in  add multiple and element
+            $("#addbutton").click(function(){
+                $("#box,h1").addClass("second")
+            })
+            //remove class used in remove class
+            $("#removebutton").click(function(){
+                $("#box,h1").removeClass("second")
+            })
+            // toggle class used in class add in remove,remove in add
+            $("#togglebutton").click(function(){
+                $("#box,h1").toggleClass("second")
+            })
+        })
+    </script>
+
+    
+</body>
+</html>

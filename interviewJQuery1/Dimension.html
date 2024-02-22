@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimension method</title>
+    <style>
+        #box{
+            background-color: green;
+            border: 5px solid black;
+            padding: 20px;
+            width:40%;
+            height:auto;
+            margin:20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1> Jqeury Dimension method</h1>
+    <div id="box">
+        <h2>Text Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repellat?</p>
+    </div>
+    <br>
+    <button id="widthBtn">Width</button>
+    <button id="heightBtn">Height</button>
+
+    <script src="//code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // width method
+            $("#widthBtn").click(function(){
+                //set width 
+                $("#box").width("400px");
+                console.clear()
+                console.log("width:" + $("#box").width());
+                console.log("innerwidth:" + $("#box").innerWidth());
+                console.log("outerwidth:" + $("#box").outerWidth());
+                console.log("outerwidth(true):" + $("#box").outerWidth(true));
+            })
+
+            //heigtht method
+
+            $("#heightBtn").click(function(){
+                // set heigth
+                $("#box").height("400px");
+                console.clear()
+                //heigth content element higth only
+                console.log("height:" + $("#box").height());
+                // innerHeigth in div all height
+                console.log("innerheight:" + $("#box").innerHeight());
+                //outerhigth in boder,div,padding in all heigth
+                console.log("outerheight:" + $("#box").outerHeight());
+                //outerheigth content,padding,magin in all heigth  
+                console.log("outerheight(true):" + $("#box").outerHeight(true));
+            })
+        })
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid2 --css</title>
+    <style>
+        .container{
+            width:80vw;
+            height: 80vh;
+            border:2px solid black;
+            display: grid;
+            grid-template-columns: [pehla]120px [doosra]100px [t];
+            grid-template-rows: 100px 100px 100px;
+            /*grid-template-columns: repeat(4,minmax(100px,1fr));*/
+            /*grid-template-columns: repeat(4,90px);*/
+            row-gap: 10px;
+            column-gap: 40px;
+            /*justify-items: center;*/
+            /* {align-content:center} used in container in larse heigth and grid minimun in use
+            align-conter:center, and align-item:center used in cell */ 
+            /*align-content: center;
+            justify-content: center;*/
+            /* place-content used in both property in work, align-content,justify-content*/
+            /*place-content: center;*/
+        }
+        .item{
+            border:3px solid red;
+            height:55px;
+            width:55px;
+
+        }
+        .item-4{
+            grid-row: 1/2;
+            /*grid-column: pehla/t;*/
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item-4">4</div>
+        <div class="item">5</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaining</title>
+    <style>
+        #box{
+            border: 2px solid red;
+            background-color: aqua;
+            width:50px;
+            height:50px;
+            padding:20px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jquery Chaining method</h1>
+    <div id="box">Rohit kumzr</div>
+    <br>
+    <button id="animateBtn">Animate</button>
+
+    <script src="//code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        // chaning method used in one to more method use
+        $(document).ready(function(){
+            $("#animateBtn").click(function(){
+                $("#box").css("backgroundColor","green").slideUp().slideDown()
+            })
+            
+        })
+    </script>
+</body>
+</html>

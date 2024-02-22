@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery css() method</title>
+    <style>
+        #box{
+           
+            border: 2px solid black;
+            padding: 20px;
+            width:40%;
+            height:auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1> Jqeury css() method</h1>
+    <div id="box">
+        <h2>Text Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repellat?</p>
+    </div>
+    <br>
+    <button id="stylebutton">Add Style</button>
+
+    <script src="//code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#stylebutton").click(function(){
+                // css method used in mutiple property use 
+                $("#box").css({"background": "red","color":"white","border":"5px solid green"});
+
+
+            })
+
+        })
+    </script>
+
+    
+</body>
+</html>

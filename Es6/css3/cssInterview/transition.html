@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition- css</title>
+    <style>
+        #box {
+            display: flex;
+            height: 200px;
+            width:200px;
+            background-color: red;
+            justify-content: center;
+            align-items: center;
+            
+
+            /*transition-property: background-color;*/
+            /*transition duration before statrting 1s*/
+            transition-duration:  1s;
+            /*transition delay after statrting 1s*/
+            transition-delay: 3s;
+            /*  transition-timing-function: {ease-in} used in start in slow and after in fast
+            {easy-out} start in fast and after in slow*/
+            /*transition-timing-function: ease-in;*/
+            /* transition delay used in 2s after in display*/
+            /*transition-delay: 2s;*/
+            /* shorthand property in one line and, {all} use property height,width*/
+            /*transition:all 3s ease-in-out  .3s ;*/
+            
+
+        }
+
+        #box:hover{
+            background-color: blue;
+            /* heigth,width used in larse size display*/
+            height: 400px;
+            width:400px;
+            border-radius: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>this is css transition </h3>
+    <div class="container">
+        <div id="box">
+            this is my box
+        </div>
+
+    </div>
+
+</body>
+
+</html>

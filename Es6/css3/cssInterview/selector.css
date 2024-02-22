@@ -1,0 +1,13 @@
+*{ /* css universal selector*/ 
+    text-align: center;
+    color:red;
+}
+
+h1,h2,p{ /* grouping selector*/
+    background-color: black;
+
+}
+
+p.center {
+    background-color:blue;
+}

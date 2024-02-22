@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fade - jqeury </title>
+    <style>
+        #box{
+            background-color: aqua;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Jquery fadein & fadeout method</h1>
+    <div id="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, sit?</p>
+    </div>
+    <br>
+    <button id="fadeInBtn">fadeIn</button>
+    <button id="fadeOutBtn">fadeOut</button>
+    <button id="fadeToggleBtn">fadeToggle</button>
+    <button id="fadeToBtn">fadeTo</button>
+    <script src="//code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){   
+            // fadeIn method used in hidden element working  
+            $("#fadeInBtn").click(function(){
+                $("#box").fadeIn(5000,function(){
+                    console.log("hide element")
+                });
+            })
+             //fadeOut method used in  show working
+             $("#fadeOutBtn").click(function(){
+                $("#box").fadeOut(2000,function(){
+                    console.log("show element")
+                });
+            })
+
+            // fadeToggle used in hide//show both working
+            $("#fadeToggleBtn").click(function(){
+                $("#box").fadeToggle(1000,function(){
+                    console.log("show  & hide both working element")
+                });
+            })
+
+                //fadeTo used in 0 to 1 opactiy b/w working 
+                $("#fadeToBtn").click(function(){
+                $("#box").fadeTo(3000,0.2,function(){
+                    console.log(" fadeTo method opacity in working")
+                });
+            })
+        
+        })
+
+        
+    </script>
+    
+</body>
+</html>
+

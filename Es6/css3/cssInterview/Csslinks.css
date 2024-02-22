@@ -1,0 +1,21 @@
+/*button{
+    padding: 20px;
+    margin:auto;  margin auto used in center 
+    font-size: 20px;
+    display: block;
+    font-weight: bold;
+    
+
+}
+
+button:hover{   hover curser in button color blue 
+    background-color: blue;
+}
+
+button:active{   active  button used in mouse clicked user in change color blue to green
+    background-color: green;
+}*/
+
+a:visited{
+    color:yellow;/* visited link click in after change yellow color*/
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<body>
+    <form action="" id="sform">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="">Country</label>
+        <select id="scountry">
+            <option value="india">India</option>
+            <option value="india">USA</option>
+            <option value="india">BGSH</option>
+            <option value="india">NLAND</option>
+        </select><br>
+        <input type="submit">
+    </form>
+
+
+    <script src="//code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //Get method used in value form
+            /*$('#sform').submit(function(){
+                var name = $('#sname').val();
+                alert("hello"+ name);*/
+
+            //Set method used value set in form
+
+
+            $('#fname').val("rohit");
+            $('#lname').val("kumar");
+
+
+        })
+
+    </script>
+</body>
+
+</html>

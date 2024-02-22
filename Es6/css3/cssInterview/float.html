@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Recursive&family=Ubuntu+Condensed&family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Lato', sans-serif;
+            font-family: 'Recursive', sans-serif;
+            font-family: 'Ubuntu', sans-serif;
+            font-family: 'Ubuntu Condensed', sans-serif;
+
+        }
+       
+        .container{
+            width: 900px;
+            border: 3px solid purple;
+            margin:auto;
+
+        }
+
+        .item{
+            border: 3px solid gray;
+            margin:12px 3px;
+            padding: 12px 3px;
+            background-color: rgb(182, 197, 197);
+
+        }
+
+        #fruit{
+            float: left;
+            width: 48%;
+
+        }
+
+        #computer{
+            /*float: left; float left is used to element floated element*/
+            /*float: none; float none used in not display  float  is default */
+            width: 48%;
+
+        }
+
+        #stationary{
+            /*float: left;*/
+            /*clear: float; the element is pushed below left floated element*/
+            /*clear: both;  The element is pushed below both left and right floated elements*/ 
+            width: 97%;
+
+
+        }
+
+        p,h3{
+            text-align: right;
+            text-align: left;
+            text-align: center;
+            text-align: justify;
+        }
+        h1{
+            width:455px;
+            text-align: center;
+            margin:auto;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruit" class="item">
+            <h3>fruit</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate, facilis saepe quia ex expedita deleniti, ratione tenetur eum corrupti omnis reiciendis doloremque harum fugit optio placeat. Dolorem, dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, illum. Maxime eius quos quo sit optio earum odit, unde nostrum cupiditate dolores. Quia harum perferendis deleniti aliquid ad recusandae non quaerat explicabo beatae ut?</p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3>Computers</h3>
+            <p id="computerspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique veniam ea ad quod quisquam, molestias commodi ipsam, architecto illo voluptas autem ipsa temporibus nam assumenda esse debitis animi molestiae necessitatibus Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo soluta labore ab possimus cum consectetur saepe commodi optio quam voluptate nulla, odit animi debitis accusantium sint eos ut tempora ullam quia, modi nihil id.</p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam modi eos recusandae magni, molestiae nulla accusantium, sapiente adipisci consequuntur deleniti ab, maxime laboriosam harum vitae rerum quam eaque deserunt nostrum.</p>
+        </div>
+
+        <div id="glasses" class="item">
+            <h3>glasses</h3>
+            <p id="glassespara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam modi eos recusandae magni, molestiae nulla accusantium, sapiente adipisci consequuntur deleniti ab, maxime laboriosam harum vitae rerum quam eaque deserunt nostrum.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
